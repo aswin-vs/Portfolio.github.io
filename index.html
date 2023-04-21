@@ -1,0 +1,987 @@
+<!-- This is my Portfolio website, developed and maintained by Aswin V S (github/aswin-vs) -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Aswin V S | Portfolio</title>
+  <link rel="icon" href="./assets/images/favicon.png" />
+
+  <!-- Google Fonts CDN -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Montserrat|Ubuntu" />
+  <link rel="stylesheet" href="./assets/libs/fonts.css" />
+
+  <!-- Boxicons CDN-->
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' />
+
+  <!-- Scroll Reveal CDN -->
+  <script src="./assets/libs/scrollreveal-4.0.9.js"></script>
+
+  <!-- External Main CSS -->
+  <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+
+  <!-- Scroll ProgressBar design -->
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <!-- Navbar section design -->
+  <header class="header">
+    <a href="#home" class="logo">Aswin.</a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a style="display: none;" href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- Home section design -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hi, there <img class="hand-wave" src="./assets/icons/wavingHand.svg" alt="wavingHand"></h3>
+      <h1>I'm Aswin V S</h1>
+      <h3><span id="text-spin"></span></h3>
+      <p>A versatile professional with a deep passion for innovation and problem-solving, I leverage my diverse skill
+        set to deliver robust and efficient solutions.</p>
+
+      <div class="social-media">
+        <!-- Reverse Tabnabbing Prevention -->
+        <a href="https://twitter.com/myselfAswin" target="_blank" rel="noopener noreferrer"><i
+            class='bx bxl-twitter bx-tada'></i></a>
+        <a href="https://linkedin.com/in/myself-aswin" target="_blank" rel="noopener noreferrer"><i
+            class='bx bxl-linkedin bx-tada'></i></a>
+        <a href="https://github.com/aswin-vs" target="_blank" rel="noopener noreferrer"><i
+            class='bx bxl-github bx-tada'></i></a>
+      </div>
+
+      <div class="home-btn">
+        <a href="./assets/files/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn"><i
+            class="fa-solid fa-file-lines home-btn-icon"></i> My Resume</a>
+      </div>
+
+    </div>
+
+    <div class="home-img">
+      <img src="./assets/images/home.png" alt="Home-img">
+    </div>
+  </section>
+
+  <!-- About section design -->
+  <section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+
+    <div class="about-container grid">
+
+      <div class="about-description-box">
+        <p class="about-description">As a professional, I possess a unique blend of technical expertise, creativity, and
+          strategic thinking that enables me to tackle any challenge with confidence.</p>
+        <p class="about-description">With a passion for continuous learning and staying up-to-date with the latest
+          technologies, I bring fresh perspectives to every project I undertake.</p>
+        <p class="about-description">Learn more about my skills and projects below, and feel free to reach out if you
+          need assistance.</p>
+      </div>
+
+      <div class="about-data-box">
+        <h3 class="about-heading">Hi, I'm <span>Aswin V S</span> | Based in India</h3>
+
+        <div class="about-info grid">
+          <div class="about-box">
+            <i class="fa-solid fa-award about-icon"></i>
+            <h3 class="about-title">Experience</h3>
+            <span class="about-subtitle">3+ Years</span>
+          </div>
+
+          <div class="about-box">
+            <i class="fa-solid fa-briefcase about-icon"></i>
+            <h3 class="about-title">Completed</h3>
+            <span class="about-subtitle">8+ Projects</span>
+          </div>
+
+          <div class="about-box">
+            <i class="fa-solid fa-headphones-simple about-icon"></i>
+            <h3 class="about-title">Support</h3>
+            <span class="about-subtitle">Online 24/7</span>
+          </div>
+        </div>
+
+        <div class="about-btn">
+          <a class="btn">More About Me<i class='bx bx-right-arrow-alt about-btn-icon'></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About popup design -->
+  <div class="about-popup hide" id="about-popup">
+    <div class="about-popup-content">
+      <span class="about-popup-close"><i class="fa-solid fa-xmark ap-close"></i></span>
+
+      <div class="ap-body">
+        <div class="ap-certifications">
+          <h3 class="ap-title"><i class="fa-solid fa-award"></i> Certifications</h3>
+
+          <div class="ap-timeline">
+            <div class="ap-timeline-item">
+              <i class='bx bxs-star ap-star-dot1'></i>
+              <i class='bx bx-star ap-star-dot2'></i>
+              <h3 class="ap-timeline-title">Crash Course on Python - <span>Coursera</span></h3>
+              <a href="https://coursera.org/verify/REVU9ETMEKWF" target="_blank" rel="noopener noreferrer"
+                class="ap-timeline-subtitle">View Certificate<i
+                  class='bx bx-chevrons-right ap-timeline-subtitle-icon'></i></a>
+            </div>
+
+            <div class="ap-timeline-item">
+              <i class='bx bxs-star ap-star-dot1'></i>
+              <i class='bx bx-star ap-star-dot2'></i>
+              <h3 class="ap-timeline-title">Automating Real-World Tasks with Python - <span>Coursera</span></h3>
+              <a href="https://coursera.org/verify/FJX27NYJX6L5" target="_blank" rel="noopener noreferrer"
+                class="ap-timeline-subtitle">View Certificate<i
+                  class='bx bx-chevrons-right ap-timeline-subtitle-icon'></i></a>
+            </div>
+
+            <div class="ap-timeline-item">
+              <i class='bx bxs-star ap-star-dot1'></i>
+              <i class='bx bx-star ap-star-dot2'></i>
+              <h3 class="ap-timeline-title">Configuration Management and the cloud - <span>Coursera</span></h3>
+              <a href="https://coursera.org/verify/MV2LCCXYUDGL" target="_blank" rel="noopener noreferrer"
+                class="ap-timeline-subtitle">View Certificate<i
+                  class='bx bx-chevrons-right ap-timeline-subtitle-icon'></i></a>
+            </div>
+
+            <div class="ap-timeline-item">
+              <i class='bx bxs-star ap-star-dot1'></i>
+              <i class='bx bx-star ap-star-dot2'></i>
+              <h3 class="ap-timeline-title">Operating Systems - <span>Coursera</span></h3>
+              <a href="https://coursera.org/verify/JF7SL6U6FBDL" target="_blank" rel="noopener noreferrer"
+                class="ap-timeline-subtitle">View Certificate<i
+                  class='bx bx-chevrons-right ap-timeline-subtitle-icon'></i></a>
+            </div>
+
+            <div class="ap-timeline-item">
+              <i class='bx bxs-star ap-star-dot1'></i>
+              <i class='bx bx-star ap-star-dot2'></i>
+              <h3 class="ap-timeline-title">The Bits and Bytes of Computer Networking - <span>Coursera</span></h3>
+              <a href="https://coursera.org/verify/LP6DAAQ5T5FJ" target="_blank" rel="noopener noreferrer"
+                class="ap-timeline-subtitle">View Certificate<i
+                  class='bx bx-chevrons-right ap-timeline-subtitle-icon'></i></a>
+            </div>
+
+            <div class="ap-timeline-item">
+              <i class='bx bxs-star ap-star-dot1'></i>
+              <i class='bx bx-star ap-star-dot2'></i>
+              <h3 class="ap-timeline-title">System Admin and IT Services - <span>Coursera</span></h3>
+              <a href="https://coursera.org/verify/EDD4U8PFTR7Z" target="_blank" rel="noopener noreferrer"
+                class="ap-timeline-subtitle">View Certificate<i
+                  class='bx bx-chevrons-right ap-timeline-subtitle-icon'></i></a>
+            </div>
+
+            <div class="ap-timeline-item">
+              <i class='bx bxs-star ap-star-dot1'></i>
+              <i class='bx bx-star ap-star-dot2'></i>
+              <h3 class="ap-timeline-title">IT Security - Defense against the digital dark arts - <span>Coursera</span>
+              </h3>
+              <a href="https://coursera.org/verify/SXWGMQXJEKU2" target="_blank" rel="noopener noreferrer"
+                class="ap-timeline-subtitle">View Certificate<i
+                  class='bx bx-chevrons-right ap-timeline-subtitle-icon'></i></a>
+            </div>
+
+            <div class="ap-timeline-item">
+              <i class='bx bxs-star ap-star-dot1'></i>
+              <i class='bx bx-star ap-star-dot2'></i>
+              <h3 class="ap-timeline-title">Introduction to the Internet of Things and Embedded Systems -
+                <span>Coursera</span>
+              </h3>
+              <a href="https://coursera.org/verify/9CD7AHATP3KH" target="_blank" rel="noopener noreferrer"
+                class="ap-timeline-subtitle">View Certificate<i
+                  class='bx bx-chevrons-right ap-timeline-subtitle-icon'></i></a>
+            </div>
+
+            <div class="ap-timeline-item">
+              <i class='bx bxs-star ap-star-dot1'></i>
+              <i class='bx bx-star ap-star-dot2'></i>
+              <h3 class="ap-timeline-title">The Arduino Platform and C Programming - <span>Coursera</span></h3>
+              <a href="https://coursera.org/verify/WT5U7JC82RDH" target="_blank" rel="noopener noreferrer"
+                class="ap-timeline-subtitle">View Certificate<i
+                  class='bx bx-chevrons-right ap-timeline-subtitle-icon'></i></a>
+            </div>
+
+            <div class="ap-timeline-item">
+              <i class='bx bxs-star ap-star-dot1'></i>
+              <i class='bx bx-star ap-star-dot2'></i>
+              <h3 class="ap-timeline-title">The Raspberry Pi Platform and Python - <span>Coursera</span></h3>
+              <a href="https://coursera.org/verify/TC3U7KHCFDAE" target="_blank" rel="noopener noreferrer"
+                class="ap-timeline-subtitle">View Certificate<i
+                  class='bx bx-chevrons-right ap-timeline-subtitle-icon'></i></a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="ap-education">
+          <h3 class="ap-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+
+          <div class="ap-timeline">
+            <div class="ap-timeline-item">
+              <div class="ap-circle-dot"></div>
+              <h3 class="ap-timeline-title">National Institute of Technology, Trichy</h3>
+              <p class="ap-timeline-text"> B.Tech - MME</p>
+              <span class="ap-timeline-subtitle"><i class="fa-solid fa-calendar-days"></i> 2019 - 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ap-experience">
+          <h3 class="ap-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+
+          <div class="ap-timeline">
+            <div class="ap-timeline-item">
+              <div class="ap-square-dot"></div>
+              <h3 class="ap-timeline-title">Summer Research Internship CALPHAD - Phase Field Modelling</h3>
+              <p class="ap-timeline-text"><i class="fa-solid fa-calendar-days"></i> May 2022 - Jul 2022</p>
+              <a href="./assets/files/Intern2.pdf" target="_blank" rel="noopener noreferrer"
+                class="ap-timeline-subtitle">View Certificate<i
+                  class='bx bx-chevrons-right ap-timeline-subtitle-icon'></i></a>
+            </div>
+
+            <div class="ap-timeline-item">
+              <div class="ap-square-dot"></div>
+              <h3 class="ap-timeline-title">Internship at National Metallurgical Laboratory (NML) - Online</h3>
+              <p class="ap-timeline-text"><i class="fa-solid fa-calendar-days"></i> Jun 2021 - Aug 2021</p>
+              <a href="./assets/files/Intern1.pdf" target="_blank" rel="noopener noreferrer"
+                class="ap-timeline-subtitle">View Certificate<i
+                  class='bx bx-chevrons-right ap-timeline-subtitle-icon'></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills section design -->
+  <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="skills-container">
+      <div class="skills-box">
+        <i style="padding-right: 0.7rem;" class="fa-brands fa-html5 skills-icon"></i>
+        <i class="fa-brands fa-css3-alt skills-icon"></i>
+        <h2>HTML / CSS</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star-half-stroke skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-brands fa-square-js skills-icon"></i>
+        <h2>JavaScript</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star-half-stroke skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-brands fa-node-js skills-icon"></i>
+        <h2>NodeJS</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-brands fa-react skills-icon"></i>
+        <h2>ReactJS (NextJS)</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star-half-stroke skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i style="font-size: 2rem; padding-top: 2.6rem;" class="fa-solid fa-c skills-icon"></i>
+        <i style="font-size: 2rem;" class="fa-solid fa-plus skills-icon"></i>
+        <i style="font-size: 2rem;" class="fa-solid fa-plus skills-icon"></i>
+        <h2 style="font-size: 2rem;">C++</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-brands fa-java skills-icon" style="padding-top: 1.5rem;"></i>
+        <h2>Java</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-brands fa-python skills-icon"></i>
+        <h2>Python</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-solid fa-server skills-icon"></i>
+        <h2>SQL</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star-half-stroke skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-solid fa-server skills-icon"></i>
+        <h2>MongoDB</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-brands fa-aws skills-icon"></i>
+        <h2>AWS</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-brands fa-git skills-icon"></i>
+        <h2>Git</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star-half-stroke skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-brands fa-linux skills-icon"></i>
+        <h2>Linux</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-brands fa-figma skills-icon"></i>
+        <h2>Figma</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-solid fa-table skills-icon"></i>
+        <h2>MS-Excel</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-solid fa-circle-nodes skills-icon"></i>
+        <h2>DSA</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star-half-stroke skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-solid fa-database skills-icon"></i>
+        <h2>DBMS</h2>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-solid fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+        <i class="fa-regular fa-star skills-star"></i>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services section design -->
+  <section class="services" id="skills">
+    <h2 class="heading">My <span>Services</span></h2>
+
+    <div class="services-container">
+      <div class="services-box">
+        <i>
+          <img style="width: 18rem; height: 12rem;" src="./assets/icons/Dev.svg" alt="Dev-Logo">
+        </i>
+
+        <h3>Full Stack Developer</h3>
+        <p>As a developer, I tackle complex problems by building innovative solutions with my expertise in good
+          programming practices.</p>
+
+        <div class="services-btn services-btn1">
+          <a class="btn">Read More<i class='bx bx-right-arrow-alt services-btn-icon'></i></a>
+        </div>
+      </div>
+
+      <div class="services-box">
+        <i>
+          <img style="width: 12rem; height: 12rem;" src="./assets/icons/Analytics.svg" alt="Analytics-Logo">
+        </i>
+
+        <h3>Data Analyst</h3>
+        <p>As a data analyst, I extract valuable insights from complex data sets to improve operational efficiency and
+          make data-driven decisions.</p>
+
+        <div class="services-btn services-btn2">
+          <a class="btn">Read More<i class='bx bx-right-arrow-alt services-btn-icon'></i></a>
+        </div>
+      </div>
+
+      <div class="services-box">
+        <i>
+          <img style="width: 16rem; height: 12rem;" src="./assets/icons/IoT.svg" alt="IoT-Logo">
+        </i>
+
+        <h3>IoT Architect</h3>
+        <p>As an IoT Architect, I design and implement secure and scalable IoT systems that can drive unparalleled
+          efficiency and productivity.</p>
+
+        <div class="services-btn services-btn3">
+          <a class="btn">Read More<i class='bx bx-right-arrow-alt services-btn-icon'></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services popup design -->
+  <div class="services-popup hide" id="sp1">
+    <div class="services-popup-content">
+      <span class="sp-close"><i class="fa-solid fa-xmark services-popup-close sp-close1"></i></span>
+
+      <h3 class="services-popup-title">Full Stack Developer</h3>
+
+      <p class="services-popup-description"><sup><i class='bx bxs-quote-alt-left first'></i></sup>There are only two
+        hard things in Computer Science: cache invalidation and naming things.<sup><i
+            class='bx bxs-quote-alt-right second'></i></sup>&nbsp;<em><b>- Phil Karlton</em></b></p>
+
+      <ul class="services-popup-services grid">
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Familiar with various languages/frameworks.</p>
+        </li>
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Best development principles and practices.</p>
+        </li>
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Ensure software architecture is robust and scalable.</p>
+        </li>
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Troubleshoot and debug complex issues.</p>
+        </li>
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Explore new technologies, Web3 and Blockchain.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="services-popup hide" id="sp2">
+    <div class="services-popup-content">
+      <span class="sp-close"><i class="fa-solid fa-xmark services-popup-close sp-close2"></i></span>
+
+      <h3 class="services-popup-title">Data Analyst</h3>
+
+      <p class="services-popup-description"><sup><i class='bx bxs-quote-alt-left first'></i></sup>74% of businesses
+        believe that data analytics gives them deep insights and a competitive advantage in their industry.<sup><i
+            class='bx bxs-quote-alt-right second'></i></sup>&nbsp;<em><b> - Forbes</em></b></p>
+
+      <ul class="services-popup-services grid">
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Collect, process and analyze data.</p>
+        </li>
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Expertise in statistics and programming.</p>
+        </li>
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Incorporation of AI and machine learning.</p>
+        </li>
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Critical thinking and problem-solving skills.</p>
+        </li>
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Proficiency in data visualization and comprehension.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="services-popup hide" id="sp3">
+    <div class="services-popup-content">
+      <span class="sp-close"><i class="fa-solid fa-xmark services-popup-close sp-close3"></i></span>
+
+      <h3 class="services-popup-title">IoT Architect</h3>
+      <p class="services-popup-description"><sup><i class='bx bxs-quote-alt-left first'></i></sup>Industries such as
+        manufacturing and transportation lead in IoT spending. 75% of organizations plan to increase IoT
+        investment.<sup><i class='bx bxs-quote-alt-right second'></i></sup>&nbsp;<em><b> - Gartner</em></b></p>
+
+      <ul class="services-popup-services grid">
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Proficiency in IoT platforms and protocols.</p>
+        </li>
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Understanding cloud-based IoT architectures.</p>
+        </li>
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Ability to design edge computing solutions.</p>
+        </li>
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Interpret large IoT data volumes effectively.</p>
+        </li>
+        <li class="services-popup-service">
+          <i class="fa-regular fa-circle-check services-popup-icon"></i>
+          <p class="services-popup-info">Expertise in IoT cybersecurity measures.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Portfolio section & Portfolio popup design
+
+  <span><i style="color: #F98128;" class="fa-solid fa-lightbulb"></i> Planned</span>
+  <span><i style="color: #EEE600;" class="fa-solid fa-clock"></i> In Progress</span>
+  <span><i style="color: #00FF54;" class="fa-solid fa-circle-check"></i> Ready</span> -->
+
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="portfolio-container">
+
+      <!-- Portfolio 1 -->
+      <div class="portfolio-box">
+        <img src="./assets/images/work1.png" alt="work1">
+        <div class="portfolio-layer">
+          <h4>ChromaPic</h4>
+          <p>A Image Editor Webapp to manipulate images using various tools and features.</p>
+
+          <div class="portfolio-stats">
+            <span><i style="color: #00FF54;" class="fa-solid fa-circle-check"></i> Ready</span>
+            <a class="portfolio-btn portfolio-btn1">Read More<i
+                class='bx bx-right-arrow-alt portfolio-stats-icon'></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Popup 1 -->
+      <div class="portfolio-popup hide" id='pp1'>
+        <div class="pp-inner">
+          <div class="pp-content grid">
+            <span class="pp-close"><i class="fa-solid fa-xmark portfolio-popup-close pp-close1"></i></span>
+
+            <div>
+              <img src="assets/images/work1.png" alt="work-1" class="pp-img">
+            </div>
+
+            <div class="pp-info">
+              <div class="pp-subtitle">Featured - <span>webApp</span></div>
+
+              <div>
+                <h3 class="pp-details-title"><span>ChromaPic</span> - Image Editor webApp</h3>
+                <p class="pp-details-description">This is a Web-based Image Editor application that allows you to edit
+                  and manipulate images using various tools and features.</p>
+                <ul class="pp-details-info">
+                  <li><i class="fa-solid fa-star"></i>Highlights - Privacy protected, Simple to use</li>
+                  <li><i class="fa-solid fa-star"></i>Features - Grayscale, Rotation, Inversion, etc</li>
+                  <li><i class="fa-solid fa-star"></i>Technologies - HTML, CSS, JavaScript</li>
+                  <li><i class="fa-solid fa-star"></i>View - <a href="https://aswin-vs.github.io/ChromaPic"
+                      target="_blank" rel="noopener noreferrer">Visit ChromaPic</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio 2 -->
+      <div class="portfolio-box">
+        <img src="./assets/images/work2.png" alt="work2">
+        <div class="portfolio-layer">
+          <h4>WonderWord</h4>
+          <p>A webApp features an English-to-English API-based dictionary.</p>
+
+          <div class="portfolio-stats">
+            <span><i style="color: #00FF54;" class="fa-solid fa-circle-check"></i> Ready</span>
+            <a class="portfolio-btn portfolio-btn2">Read More<i
+                class='bx bx-right-arrow-alt portfolio-stats-icon'></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Popup 2 -->
+      <div class="portfolio-popup hide" id='pp2'>
+        <div class="pp-inner">
+          <div class="pp-content grid">
+            <span class="pp-close"><i class="fa-solid fa-xmark portfolio-popup-close pp-close2"></i></span>
+
+            <div>
+              <img src="./assets/images/work2.png" alt="work-2" class="pp-img">
+            </div>
+
+            <div class="pp-info">
+              <div class="pp-subtitle">Featured - <span>webApp</span></div>
+
+              <div>
+                <h3 class="pp-details-title"><span>WonderWord</span> - Dictionary webApp</h3>
+                <p class="pp-details-description">This innovative webApp features an English-to-English API-based
+                  dictionary that provides you with comprehensive information about any meaningful word you enter.</p>
+                <ul class="pp-details-info">
+                  <li><i class="fa-solid fa-star"></i>Highlights - Quick result, Simple UI</li>
+                  <li><i class="fa-solid fa-star"></i>Features - Synonyms, Pronunciation, etc</li>
+                  <li><i class="fa-solid fa-star"></i>Technologies - HTML, CSS, JavaScript, API</li>
+                  <li><i class="fa-solid fa-star"></i>View - <a href="https://aswin-vs.github.io/WonderWord"
+                      target="_blank" rel="noopener noreferrer">Visit WonderWord</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio 3 -->
+      <div class="portfolio-box">
+        <img src="./assets/images/work3.png" alt="work3">
+        <div class="portfolio-layer">
+          <h4>Pexelone</h4>
+          <p>A Image gallery webApp that allows free download of high-quality images, works with Pexels API.</p>
+
+          <div class="portfolio-stats">
+            <span><i style="color: #00FF54;" class="fa-solid fa-circle-check"></i> Ready</span>
+            <a class="portfolio-btn portfolio-btn3">Read More<i
+                class='bx bx-right-arrow-alt portfolio-stats-icon'></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Popup 3 -->
+      <div class="portfolio-popup hide" id='pp3'>
+        <div class="pp-inner">
+          <div class="pp-content grid">
+            <span class="pp-close"><i class="fa-solid fa-xmark portfolio-popup-close pp-close3"></i></span>
+
+            <div>
+              <img src="assets/images/work3.png" alt="work-3" class="pp-img">
+            </div>
+
+            <div class="pp-info">
+              <div class="pp-subtitle">Featured - <span>webApp</span></div>
+
+              <div>
+                <h3 class="pp-details-title"><span>Pexelone</span> - Online Image Gallery</h3>
+                <p class="pp-details-description">This is a Image gallery webApp that allows users to search and
+                  download high-quality images for free, with the help of Pexels API.</p>
+                <ul class="pp-details-info">
+                  <li><i class="fa-solid fa-star"></i>Highlights - Vast high-quality Image collections</li>
+                  <li><i class="fa-solid fa-star"></i>Features - Easy search and pick of images</li>
+                  <li><i class="fa-solid fa-star"></i>Technologies - HTML, CSS, JavaScript, API</li>
+                  <li><i class="fa-solid fa-star"></i>View - <a href="https://aswin-vs.github.io/Pexelone"
+                      target="_blank" rel="noopener noreferrer">Visit Pexelone</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio 4 -->
+      <div class="portfolio-box">
+        <img src="./assets/images/work4.png" alt="work4">
+        <div class="portfolio-layer">
+          <h4>InstaScraper</h4>
+          <p>A Python CLI-based web scraper/Crawler application for Instagram.</p>
+
+          <div class="portfolio-stats">
+            <span><i style="color: #00FF54;" class="fa-solid fa-circle-check"></i> Ready</span>
+            <a class="portfolio-btn portfolio-btn4">Read More<i
+                class='bx bx-right-arrow-alt portfolio-stats-icon'></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Popup 4 -->
+      <div class="portfolio-popup hide" id='pp4'>
+        <div class="pp-inner">
+          <div class="pp-content grid">
+            <span class="pp-close"><i class="fa-solid fa-xmark portfolio-popup-close pp-close4"></i></span>
+
+            <div>
+              <img src="assets/images/work4.png" alt="work-4" class="pp-img">
+            </div>
+
+            <div class="pp-info">
+              <div class="pp-subtitle">Featured - <span>CLI Tool</span></div>
+
+              <div>
+                <h3 class="pp-details-title"><span>InstaScraper</span> - Content Scraper</h3>
+                <p class="pp-details-description">This is a Python CLI-based Instagram Scraper/Crawler application that
+                  allows you to download posted content along with their captions and other metadata from Instagram.</p>
+                <ul class="pp-details-info">
+                  <li><i class="fa-solid fa-star"></i>Highlights - Metadata, Content filters, Data Logs</li>
+                  <li><i class="fa-solid fa-star"></i>Disclaimer - For educational purposes only</li>
+                  <li><i class="fa-solid fa-star"></i>Technologies - Python, Shell, Sqlite3, API</li>
+                  <li><i class="fa-solid fa-star"></i>View - <a href="https://github.com/aswin-vs/InstaScraper"
+                      target="_blank" rel="noopener noreferrer">Visit InstaScraper</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio 5 -->
+      <div class="portfolio-box">
+        <img src="./assets/images/work5.png" alt="work5">
+        <div class="portfolio-layer">
+          <h4>DyeHunt</h4>
+          <p>A sleek and easy-to-use color picker extension designed to make color selection a breeze.</p>
+
+          <div class="portfolio-stats">
+            <span><i style="color: #EEE600;" class="fa-solid fa-clock"></i> In Progress</span>
+            <a class="portfolio-btn portfolio-btn5">Read More<i
+                class='bx bx-right-arrow-alt portfolio-stats-icon'></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Popup 5 -->
+      <div class="portfolio-popup hide" id='pp5'>
+        <div class="pp-inner">
+          <div class="pp-content grid">
+            <span class="pp-close"><i class="fa-solid fa-xmark portfolio-popup-close pp-close5"></i></span>
+
+            <div>
+              <img src="assets/images/work5.png" alt="work-5" class="pp-img">
+            </div>
+
+            <div class="pp-info">
+              <div class="pp-subtitle">Featured - <span>Browser Extension</span></div>
+
+              <div>
+                <h3 class="pp-details-title"><span>DyeHunt</span> - Browser Extension</h3>
+                <p class="pp-details-description">A sleek and easy-to-use color picker extension designed to make color
+                  selection a breeze. With just a single click, you can pick any color on your screen and instantly view
+                  a history of picked colors.</p>
+                <ul class="pp-details-info">
+                  <li><i class="fa-solid fa-star"></i>Highlights - Clean and Simple UI</li>
+                  <li><i class="fa-solid fa-star"></i>Features - Convenient color history</li>
+                  <li><i class="fa-solid fa-star"></i>Technologies - HTML, CSS, JavaScript</li>
+                  <li><i class="fa-solid fa-star"></i>View - <a href="https://github.com/aswin-vs/DyeHunt-Extension"
+                      target="_blank" rel="noopener noreferrer">Visit DyeHunt</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio 6 -->
+      <div class="portfolio-box">
+        <img src="./assets/images/work6.png" alt="work6">
+        <div class="portfolio-layer">
+          <h4>Qmeet</h4>
+          <p>A MERN stack webapp features a webRTC application, will be published soon.</p>
+
+          <div class="portfolio-stats">
+            <span style="padding: 1rem;"><i style="color: #F98128;" class="fa-solid fa-lightbulb"></i> Planned</span>
+            <a style="display: none;" class="portfolio-btn portfolio-btn6">Read More<i
+                class='bx bx-right-arrow-alt portfolio-stats-icon'></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Popup 6 -->
+      <div class="portfolio-popup hide" id='pp6'>
+        <div class="pp-inner">
+          <div class="pp-content grid">
+            <span class="pp-close"><i class="fa-solid fa-xmark portfolio-popup-close pp-close6"></i></span>
+
+            <div>
+              <img src="assets/images/work6.png" alt="work-6" class="pp-img">
+            </div>
+
+            <div class="pp-info">
+              <div class="pp-subtitle">Featured - <span>webApp</span></div>
+
+              <div>
+                <h3 class="pp-details-title"><span>Qmeet</span></h3>
+                <p class="pp-details-description"></p>
+                <ul class="pp-details-info">
+                  <li><i class="fa-solid fa-star"></i>Highlights - </li>
+                  <li><i class="fa-solid fa-star"></i>Features - </li>
+                  <li><i class="fa-solid fa-star"></i>Technologies - </li>
+                  <li><i class="fa-solid fa-star"></i>View - <a href="" target="_blank" rel="noopener noreferrer">Visit
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact section design -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <div class="contact-container grid">
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-card">
+            <i class="fa-solid fa-envelope contact-card-icon"></i>
+            <h3 class="contact-card-title">Email</h3>
+            <span class="contact-card-data">aswinvs.nitt@gmail.com</span>
+            <a href="mailto:aswinvs.nitt@gmail.com" target="_blank" rel="noopener noreferrer"
+              class="contact-button">Write me <i class="bx bx-right-arrow-alt contact-button-icon"></i></a>
+          </div>
+
+          <div class="contact-card">
+            <i class="fa-brands fa-twitter contact-card-icon"></i>
+            <h3 class="contact-card-title">Twitter</h3>
+            <span class="contact-card-data">@myselfAswin</span>
+            <a href="https://twitter.com/messages/compose?recipient_id=1232978990949814274" target="_blank"
+              rel="noopener noreferrer" class="contact-button">Write me <i
+                class="bx bx-right-arrow-alt contact-button-icon"></i></a>
+          </div>
+
+          <div class="contact-card">
+            <i class="fa-brands fa-linkedin contact-card-icon"></i>
+            <h3 class="contact-card-title">LinkedIn</h3>
+            <span class="contact-card-data">myself-aswin</span>
+            <a href="https://linkedin.com/messaging/compose/?recipient=myself-aswin" target="_blank"
+              rel="noopener noreferrer" class="contact-button">Write me <i
+                class="bx bx-right-arrow-alt contact-button-icon"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-content">
+        <form method="POST" name="contact-form" class="contact-form" id="contact-form">
+          <div class="input-box">
+            <input type="text" name="Name" minlength="2" maxlength="40" pattern="[A-Za-z ]+" placeholder="Full Name"
+              required>
+          </div>
+
+          <div class="input-box">
+            <input type="email" name="Email" minlength="6" maxlength="50"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email Address" required>
+          </div>
+
+          <div class="input-box">
+            <input type="text" name="_subject" minlength="2" maxlength="100" pattern="[A-Za-z0-9!#$%&'*+-/=?^_`{|}~ ]+"
+              placeholder="Subject" required>
+          </div>
+
+          <div class="input-box textarea">
+            <textarea id="form-msg" cols="50" rows="6" name="Message" minlength="2" maxlength="2000"
+              placeholder="Message" required></textarea>
+            <span id="charCount"></span>
+          </div>
+
+          <input type="hidden" name="_captcha" value="false">
+
+          <button class="btn" id="contact-btn" type="submit">
+            <div class="contact-btn-state1">
+              Send Message
+              <i class='bx bxs-send contact-btn-icon'></i>
+            </div>
+
+            <div class="contact-btn-state2 hide">
+              Please wait...
+            </div>
+          </button>
+
+          <div id="contact-msg-success"><i class='bx bxs-check-circle bx-tada'></i> Message sent successfully</div>
+          <div id="contact-msg-fail"><i class='bx bxs-error-circle bx-tada'></i> Network Error, Try again</div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section design -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Made with ❤️ | Aswin V S</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt footer-iconTop-arrow'></i></a>
+    </div>
+  </footer>
+
+  <!--Font Awesome CDN-->
+  <script src="https://kit.fontawesome.com/39abac092b.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="./assets/libs/jquery-3.6.4.min.js"></script>
+
+  <!-- External Main JS -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
