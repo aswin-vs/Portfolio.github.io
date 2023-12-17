@@ -146,11 +146,28 @@ span {
 
 .logo {
   color: var(--text-color);
-  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  font-size: 2.7rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
   user-select: none;
   cursor: default;
+}
+
+.logo img {
+  width: 5.7rem;
+  margin-left: 5px;
+  animation: logoAnimation 4.5s infinite ease-in-out;
+}
+
+@keyframes logoAnimation {
+  0%, 20%, 80%, 100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
 }
 
 #menu-icon {
@@ -1139,13 +1156,13 @@ span {
 /* Contact Section */
 
 .contact {
-  padding: 7.5rem 0 2rem;
+  padding: 8.8rem 0 2rem 0;
 }
 
 .contact-container {
   grid-template-columns: 300px 460px;
   column-gap: 6rem;
-  margin: 2rem 0 6rem 0;
+  margin: 2.4rem 0 6rem 0;
   justify-content: center;
   align-items: center;
 }
